@@ -1,7 +1,6 @@
 (function () {
     var app = angular.module("cric-app");
     app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-        $urlRouterProvider.otherwise("/404");
         $stateProvider
             .state('base', {
                 url: "",
@@ -24,6 +23,7 @@
                 url: "/404",
                 templateUrl: "views/404.html"
             });
+        $urlRouterProvider.otherwise("/404");
         $locationProvider.hashPrefix('');
     });
 })();
