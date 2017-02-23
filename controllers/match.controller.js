@@ -1,6 +1,8 @@
 (function () {
-    var app = angular.module("cric-app");
-    app.controller('match-ctrl', function ($scope) {
+    'use strict';
+    var app = angular.module("cricApp");
+    app.controller('matchController', Constructor);
+    function Constructor() {
         
-    });
+    }
 })();

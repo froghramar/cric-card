@@ -1,5 +1,6 @@
 (function () {
-    var app = angular.module("cric-app");
+    'use strict';
+    var app = angular.module("cricApp");
     app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
             .state('base', {
@@ -17,7 +18,8 @@
             .state('play', {
                 url: "/play",
                 templateUrl: "views/play.html",
-                controller: 'play-ctrl'
+                controller: 'playController',
+                controllerAs : 'vm'
             })
             .state('404', {
                 url: "/404",
